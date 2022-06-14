@@ -1,0 +1,968 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital,wght@0,100;1,100&display=swap');
+*{
+    margin: 0 auto;
+    
+}
+body{
+    background-color: rgba(0, 0, 0, 0.777);
+}
+header{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.614);
+}
+.header ul{
+    display: flex;
+    color: black;
+}
+.header li{
+    font-size: 1.5em;
+    margin-left: 40px;
+    display: inline;
+    margin-top: 40px;
+    color: black;
+}
+a {
+    text-decoration: none; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 600px) {
+  header .header ul {display: inline;}
+}
+header .header{
+  position:sticky;
+  position:sticky; top:0;
+  height: 100px;
+}
+.wrapper{
+    background-image: url(img/ssccoo.jpeg);
+    background-size:cover;
+    background-position:center center;}
+h1{
+    color: aliceblue;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 50px;
+
+}
+
+#rectangle {
+    width: 400px;
+    height: 300px;
+    background: #ffffff4b;
+    border-radius: 30px;
+}
+#rectangle1 {
+    width: 1000px;
+    height: 300px;
+    background: #ffffff4b;
+    border-radius: 30px;
+}
+.blok1{
+    display: flex;
+    margin: 20px;
+    overflow: hidden;
+}
+.block2{
+    display: flex;
+    margin: 20px;
+}
+div #rectangle{
+    box-shadow: 5px 5px 5px rgb(64, 153, 237);
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div #rectangle1{
+    box-shadow: 5px 5px 5px rgb(217, 36, 237);
+    color: #000000;
+    font-size: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px #3287ccb3;
+    background-size:cover;
+    background-position:center center;
+    z-index:4;
+}
+@media (max-width:600px){
+  div #rectangle1 p{font-size:14.7px;}
+  
+  }
+@media (max-width:300px){
+  div #rectangle1 p{font-size:10.5px;}
+    
+  }
+.container{
+    width:100vw;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .main{
+    height:100vh;
+    width:100%;  
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 4rem;
+  }
+  
+  .roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #f62a45;
+  }
+  
+  
+  #spare-time{
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
+    
+  }
+  .contect2{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 2.125rem;
+  }
+    
+    .roller{
+    height: 2.6rem; 
+    line-height: 2.125rem;  
+    }
+    
+    #spare-time {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  
+  }
+    
+    @keyframes slide-mob {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -2.125rem;    
+    }
+    50%{
+      top: -4.25rem;
+    }
+    72.5%{
+      top: -6.375rem;
+    }
+  }
+  }
+  
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulse {
+    from, 20%, 40%, 80%, to {
+      transform: scale(1);
+    }
+    
+    10%, 60% {
+      transform: scale(1.1);
+    }
+  }
+  
+  
+
+  
+  #circle-glow {
+    animation: pulse 10s ease-in-out infinite;
+    background: var(--conic-gradient);
+    border-radius: 100vh;
+    filter: blur(3vh);
+    height: 120%;
+    opacity: 0.25;
+    width: 120%;
+    z-index: 2;
+  }
+  
+  #circle-inner {
+    background: linear-gradient(
+      to right, 
+      var(--background-left), 
+      var(--background-right)
+    );
+    z-index: 3;
+  }
+  
+  #app {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  
+    width: 100vw;
+    z-index: 2;
+  }
+  
+  #nav {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 120px;
+  }
+  
+  #nav-items {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 120px;
+  }
+  #nav-items > .nav-item {
+    border-radius: 6px;
+    cursor: pointer;
+    display: grid;
+    height: 100px;
+    place-items: center;
+    transition: background-color 250ms;
+    width: 100px;
+  }
+  
+  #nav-items > .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+  
+  #nav-items > .nav-item:hover > i {
+    color: rgba(255, 255, 255, 0.9); 
+  }
+  
+  #nav-items > .nav-item > i {
+    color: rgba(255, 255, 255, 0.4); 
+    font-size: 2.5em;
+    transition: color 250ms;
+  }
+  
+  #profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 0.8vw, 20px);
+    justify-content: center;
+    margin-left: 80px;
+    width: clamp(600px, 80vw, 1400px);
+  }
+  
+  #profiles > .profile {
+    aspect-ratio: 7 / 8;
+    backdrop-filter: blur(0.75vw);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background-color 250ms;
+    width: calc(25% - clamp(10px, 0.8vw, 20px));
+  }
+  
+ 
+  
+  .profile > .profile-content > .profile-pic {
+    aspect-ratio: 1;
+    border: clamp(3px, 0.4vw, 5px) solid white;
+    border-radius: 100%;
+    flex-shrink: 0;
+    height: 70%;
+    position: relative;
+  }
+  
+  .profile > .profile-content > .profile-pic > .profile-pic-image {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 100%;
+    height: calc(100% - clamp(10px, 1.5vw, 20px));
+    margin: clamp(5px, 0.75vw, 10px);
+    object-fit: cover;
+    width: calc(100% - clamp(10px, 1.5vw, 20px));
+  }
+  
+  .profile > .profile-content > .profile-name {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(1em, 2vw, 2em);
+    margin: 0px;
+    text-align: center;
+  }
+  
+
+  
+  /* -- YouTube Link Styles -- */
+
+
+
+article{
+  color: white;
+}
+article ul li {
+  color:wheat
+} 
+
+
+/*--------------------------
+	Some global flow defaults
+---------------------------*/
+
+
+
+
+
+
+
+/*--------------------------
+	JTU (Just Text Utilities)
+---------------------------*/
+
+.fs0 { font-size: clamp(3.05rem, calc(-0.20rem + 16.27vw), 11.39rem) }
+.fs1 { font-size: clamp(2.44rem, calc(0.43rem + 10.05vw), 7.59rem) }
+.fs2 { font-size: clamp(1.95rem, calc(0.74rem + 6.07vw), 5.06rem) }
+.fs3 { font-size: clamp(1.56rem, calc(0.86rem + 3.54vw), 3.38rem) }
+.fs4 { font-size: clamp(1.25rem, calc(0.86rem + 1.95vw), 2.25rem) }
+.fs5 { font-size: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem) }
+.fs6 { font-size: clamp(0.80rem, calc(0.72rem + 0.39vw), 1.00rem) }
+
+.fw1 { font-weight: 100 }
+.fw2 { font-weight: 200 }
+.fw3 { font-weight: 300 }
+.fw4 { font-weight: 400 }
+.fw5 { font-weight: 500 }
+.fw6 { font-weight: 600 }
+.fw7 { font-weight: 700 }
+.fw8 { font-weight: 800 }
+.fw9 { font-weight: 900 }
+
+.lh-copy { line-height: calc(0.5rem + 1em) }
+.lh-title { line-height: calc(0.2rem + 1em) }
+
+.ttu { text-transform: uppercase }
+.tc { text-align: center }
+
+.ls-tight { letter-spacing: -.05em }
+.ls-loose { letter-spacing: .5em }
+
+.m { max-inline-size: 45ch }
+.m-wide { max-inline-size: 55ch }
+.m-short { max-inline-size: 20ch }
+
+.list { list-style: none }
+
+.col {
+	display: grid;
+	grid-gap: 0 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), max-content));
+}
+:root {
+  --minh: 98vh;
+  --color1: rgb(255, 255, 255);
+  --color2: rgba(0, 0, 0, 0.777);
+}
+
+
+.curtain {
+  /** create the "split" background **/
+  background-image: linear-gradient(to bottom, var(--color2) 50%, var(--color1) 50%);
+}
+
+/** add extra space to the bottom (need this for the "sticky" effect) **/
+.curtain::after {
+  content: "";
+  display: block;
+  min-height: var(--minh);
+}
+
+
+
+.invert {
+  /** make the content sticky **/
+  position: sticky;
+  top: 20px;
+
+  /** blend the content with the contrast effect **/
+  mix-blend-mode: difference;
+
+  /** center the content **/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /** set the minimum height of the section **/
+  min-height: var(--minh);
+}
+
+h2 {
+  /** set the color of the text **/
+  color: var(--color1);
+  font-size: 60px;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+@import url(https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap);
+
+html {
+    filter: url('#contrast');
+    height: 100%;
+    background-color: #393838de;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+
+
+
+.frontFace {
+    position: relative;
+    height: 100vh;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frontFace-container::before {
+     content: "The\APersistence of\AMemory";
+     white-space: pre;
+     position: absolute;
+     top: 50%;
+     left: 0;
+     transform: translateY(-50%);
+     font-size: 13.375vw;
+     letter-spacing: 0.05em;
+     color: #edebeb;
+     line-height: 1.4;
+}
+
+.frontContent-sentence {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+
+.frontContent-title {
+    width: 47.8125vw;
+}
+
+.frontContent-title-main {
+    font-weight: 400;
+	font-size: 8.75vw;
+    letter-spacing: 0.017em;
+    line-height: 1;
+    margin: 5.125vw auto 3vw;
+}
+
+.frontContent-text {
+    margin-top: 2vw;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 1.125vw;
+    letter-spacing: 0.05em;
+    line-height: 2;
+}
+
+.frontContent-img {
+    width: 34.9375vw;
+    margin-top: 6vw;
+}
+.backFace {
+	position: relative;
+	background: #fff;
+	opacity: 0;
+    height: 100vh;
+    margin-top: -100vh;
+}
+.backFace-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.backFace-text {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 1vw;
+    letter-spacing: 0.1em;
+    width: 60vw;
+    line-height: 2.5;
+}
+
+.clock-container {
+    filter:url('#noise') blur(7px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.c1 {
+    animation: clock-1 15s infinite;
+}
+
+.c2 {
+    animation: clock-2 17s infinite;
+    margin-left: 5vw;
+}
+
+.c3 {
+    animation: clock-3 20s infinite;
+    margin-left: 5vw;
+}
+
+.c4 {
+    animation: typo-1 20s infinite;
+}
+
+.c5 {
+    animation: typo-2 30s infinite;
+}
+
+.clock {
+    width: 31.875vw;
+    height: 29.375vw;
+}
+
+
+@keyframes clock-1 {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes clock-2 {
+    0% {
+        transform: translateY(300%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes clock-3 {
+    0% {
+        transform: translateY(400%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes typo-1 {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+@keyframes typo-2 {
+    0% {
+        transform: translateY(300%);
+    }
+    100% {
+        transform: translateY(-300%);
+    }
+}
+
+.frontFace--menu-open .button-menu {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.backFace.backFace--open {
+	opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay {
+	position: absolute;
+    top: 0;
+    left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+    pointer-events: none;
+}
+
+.buttonFrame {
+
+    z-index: 1;
+    margin-top: 1vw;
+}
+
+.buttonFrame.close {
+    margin-top: 5vw;
+}
+
+.button-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    font-family: 'Shippori Mincho', serif;
+    height: 5.625vw;
+    width: 25vw;
+}
+
+.button-open .click,
+.button-close .click {
+    
+    line-height: 1;
+    font-size: 1.125vw;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    transition: letter-spacing 0.2s ease-out;
+    height: 5.625vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.button-open::before,
+.button-close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5.625vw;
+    height: 5.625vw;
+    border-radius: 50%;
+    transition: width 0.2s ease-out, height 0.2s ease-out;
+}
+
+.button-open::before {
+    background-color: #fff;
+    z-index: -1;
+}
+
+.button-close::before {
+    background-color: #f3f3f3;
+}
+
+.button-menu:hover .button-open .click,
+.button-menu:hover .button-close .click {
+    letter-spacing: 0.2em;
+}
+
+.button-menu:hover .button-open::before,
+.button-menu:hover .button-close::before {
+    width: 0;
+    height: 0;
+}
+
+
+@media screen and (min-width:1600px) {
+    .frontFace {
+        height: 100vh;
+    }
+
+    .frontFace-container::before {
+        font-size: 230px;
+    }
+
+
+    .frontContent-sentence {
+        width: 1360px;
+    }
+
+    .frontContent-title {
+        width: 680px;
+    }
+
+    .frontContent-title-main {
+        font-size: 140px;
+        margin: 82px auto 48px;
+    }
+
+    .frontContent-text {
+        margin-top: 32px;
+        font-size: 18px;
+    }
+
+    .frontContent-img {
+        width: 559px;
+        margin-top: 96px;
+    }
+
+    .backFace-text {
+        font-size: 16px;
+        width: 960px;
+    }
+
+    .buttonFrame {
+        bottom: 48px;
+    }
+
+    .button-menu {
+        height: 90px;
+        width:  400px;
+    }
+
+    .button-open .click,
+    .button-close .click {
+        font-size: 20px;
+        height: 90px;
+    }
+
+    .button-open::before,
+    .button-close::before {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 800px) {
+    .buttonFrame {
+        margin-top: -4vw;
+    }
+}
+section .avtor{
+  display: flex;
+  z-index: -1;
+}
+/* Three column layout */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+  max-width: 80em;
+  margin: 0 auto;
+
+}
+
+/* Inside one column, lay out all items in column direction */
+.column {
+  --column-offset: 10vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--column-offset) 0;
+}
+
+/* Limit site of the images */
+.column__item-imgwrap img {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.75;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.column__item-caption {
+  text-align: center;
+}
+
+/* Show warning for older browsers */
+
+.warning a,
+.info a {
+  color: blue;
+}
+.info {
+  display: none;
+  border: 1px solid #123456;
+  background: rgba(205 230 255 / 0.8);
+}
+
+/* Scroll-Timeline Supported, Yay! */
+@supports (animation-timeline: works) {
+  /* Hide Warning */
+  .warning {
+      display: none;
+  }
+
+  /* As we're about to shift content out of .columns, we need it to hide its overflow */
+  .columns {
+      overflow-y: hidden;
+  }
+
+  .column-reverse {
+      /* Flip item order in reverse columns */
+      flex-direction: column-reverse;
+  }
+
+  /* Set up Animation */
+  @keyframes adjust-position {
+      /* Start position: shift entire column up, but not so that it goes out of view */
+      from {
+          transform: translateY(calc(-100% + 100vh));
+      }
+      /* End position: shift entire column down, but not so that it goes out of view */
+      to {
+          transform: translateY(calc(100% - 100vh));
+      }
+  }
+
+  /* Hook our animation with the timeline to our columns */
+  .column-reverse {
+      animation: 1s adjust-position linear forwards;
+      animation-timeline: scroll-in-document;
+  }
+}
+
+/* general styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+
+figcaption{
+  color: rgb(255, 255, 255);
+}
+section.cards{
+  height: 500px;
+  display: contents;
+}
+.card{
+    width: 350px;
+    height: 450px;
+    background-color:rgb(217, 217, 217);
+    border-radius: 40px;
+    border-bottom-left-radius: -40px ;
+}
+@media (max-width: 400px){
+  .card{width: 300px;}
+}
+.card h3{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 40px;
+ margin-top: 20px;
+ 
+}
+
+.toreg{
+  position: absolute;
+  margin-left: 180px;
+  transform: translate(-50%);
+  width: 70px;
+  height: 60px;
+  background-color: rgb(217, 217, 217);
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.toreg svg{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.cards nav{
+  margin-top: 50px;
+}
+.cards li{
+  word-break: break-all;
+  margin-top: 20px;
+  z-index: 100000;
+  font-size: 1.5em;
+}
+.carts1{
+  display: flex;
+}
+.carts2{
+  margin-top: 300px;
+  display: flex;
+}
+@media (max-width: 600px) {
+  .carts1{display: inline;}
+}
+@media (max-width: 600px) {
+  .carts2{display: inline;}
+}
+
+
+@media (min-width: 600px){
+  .cards nav{display: none;}
+}

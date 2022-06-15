@@ -91,6 +91,27 @@ div #rectangle1{
   div #rectangle1 p{font-size:10.5px;}
     
   }
+ section .cart{
+  
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 0;
+  height: 1000px;
+ }
+ .maps{
+  justify-content: center;
+  align-items: center;
+  margin-left: 450px;
+  margin-top: 200px;
+  border-radius: 20px;
+}
+@media (max-width:600px) {
+    .maps{margin: 0; margin-left: 10px;}
+    iframe{width: 300px; }
+}
 .container{
     width:100vw;
     height:80vh;
@@ -899,6 +920,16 @@ figcaption{
 .vec_rasp ol li{
   font-size: 20px;
   margin-top: 15px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.vec_rasp h2{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.vec_rasp .box1 h2{
+  font-size: 30px;
 }
 section .container2,
 section .container1{
@@ -911,30 +942,35 @@ section .container1 .box1{
   width: 250px;
   height: 500px;
   background: linear-gradient(315deg, red, rgb(255, 247, 0));
-  transform: skewX(15deg);
+  transform: skewX(10deg);
   transition: 0.5s;
   border-radius: 20px;
 }
 @media (max-width:600px){
-  section .container1 .box1{width: 150px;height: 450px;}
+  section .container1 .box1{width: 200px;height: 450px;}
 }
+
 section .container1 .box2{
   width: 250px;
   height: 500px;
   background: linear-gradient(315deg, rgb(4, 255, 0), rgb(191, 0, 255));
-  transform: skewX(15deg);
+  transform: skewX(10deg);
   transition: 0.5s;
   border-radius: 20px;
-
+}
+@media (max-width:600px){
+  section .container1 .box2{width: 200px;height: 450px;}
 }
 section .container1 .box3{
   width: 250px;
   height: 500px;
   background: linear-gradient(315deg, rgb(38, 0, 255), rgb(255, 94, 0));
-  transform: skewX(15deg);
+  transform: skewX(10deg);
   transition: 0.5s;
   border-radius: 20px;
-
+}
+@media (max-width:600px){
+  section .container1 .box3{width: 200px;height: 450px;}
 }
 section .container1 .box1:hover{
   transform: skewX(0deg);
@@ -949,29 +985,35 @@ section .container2 .box4{
   width: 250px;
   height: 500px;
   background: linear-gradient(315deg, rgb(0, 191, 255), rgb(255, 247, 0));
-  transform: skewX(15deg);
+  transform: skewX(10deg);
   transition: 0.5s;
   border-radius: 20px;
-
+}
+@media (max-width:600px){
+  section .container2 .box4{width: 200px;height: 450px;}
 }
 
 section .container2 .box5{
   width: 250px;
   height: 500px;
   background: linear-gradient(315deg, rgb(255, 0, 255), rgb(255, 0, 0));
-  transform: skewX(15deg);
+  transform: skewX(10deg);
   transition: 0.5s;
   border-radius: 20px;
-
+}
+@media (max-width:600px){
+  section .container2 .box5{width: 200px;height: 450px;}
 }
 section .container2 .box6{
   width: 250px;
   height: 500px;
   background: linear-gradient(315deg, rgb(38, 0, 255), rgb(255, 94, 0));
-  transform: skewX(15deg);
+  transform: skewX(10deg);
   transition: 0.5s;
   border-radius: 20px;
-
+}
+@media (max-width:600px){
+  section .container2 .box6{width: 200px;height: 450px;}
 }
 section .container2 .box4:hover{
   transform: skewX(0deg);
@@ -990,6 +1032,9 @@ section .container2 .box6:hover{
   margin-left:50px;
   transform: skewX(0deg);
 }
+@media (max-width: 600px) {
+  .container1 .content{width: 185px; height: 350px; }
+}
 .container2 .content{
   width: 270px;
   height: 350px;
@@ -998,6 +1043,10 @@ section .container2 .box6:hover{
   margin-left:50px;
   transform: skewX(0deg);
 }
+@media (max-width: 600px) {
+  .container2 .content{width: 185px; height: 350px; }
+}
+
 @media (max-width:600px){
   section .container1{display: inline;}
 }

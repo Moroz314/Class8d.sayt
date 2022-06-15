@@ -27,7 +27,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 600px) {
-  header .header ul {display: inline;}
+  .header ul{display: inline;margin-top: 10px;}
 }
 header .header{
   position:sticky;
@@ -353,8 +353,6 @@ article{
 article ul li {
   color:wheat
 } 
-
-
 /*--------------------------
 	Some global flow defaults
 ---------------------------*/
@@ -385,7 +383,7 @@ article ul li {
 .fw6 { font-weight: 600 }
 .fw7 { font-weight: 700 }
 .fw8 { font-weight: 800 }
-.fw9 { font-weight: 900 }
+
 
 .lh-copy { line-height: calc(0.5rem + 1em) }
 .lh-title { line-height: calc(0.2rem + 1em) }
@@ -910,7 +908,7 @@ section.cards{
     border-bottom-left-radius: -40px ;
 }
 @media (max-width: 400px){
-  .card{width: 300px;}
+  .card{width: 260px;}
 }
 .card h3{
  display: flex;
